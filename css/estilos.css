@@ -1,0 +1,152 @@
+/* Estilos generales con fondo GIF */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQs72SRz8QbNetM33nr8ud-DGWXxt5YcorcWVeU2PIhVvIVmtJ_DO62TkaGc7AQuOQdll3FhHR102eXvsvswALLQkV1SjvTvP8XjrtzAVdZizBvbuNbFx-ZuTnMc5edxhWDaPX2Y-Pt-A/s450/tenor+%25286%2529.gif'); /* GIF de fondo de Halloween */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Hace que el fondo permanezca fijo al hacer scroll */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navegación */
+nav {
+    background-color: #333;
+    width: 100%;
+    padding: 1.5% 0%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    margin: 0 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+li a:hover {
+    color: #FF5722;
+    background-color: #222;
+    padding: 10px 14px;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente para mejorar legibilidad */
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Contenedor de disfraces en modo tarjetas */
+.disfraces-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas salten de línea en pantallas pequeñas */
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente para mejorar legibilidad */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Estilo de tarjeta individual para cada disfraz */
+.disfraz {
+    background-color: #333;
+    border: 2px solid #FF5722;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 200px; /* Ancho máximo de cada tarjeta */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+}
+
+.disfraz:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para encabezados */
+h1, h2 {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/* Estilo para las imágenes en cada tarjeta */
+.disfraz img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+/* Efecto de zoom en hover para imágenes de disfraces */
+.disfraz img:hover {
+    transform: scale(1.05);
+}
+
+/* Botones */
+button {
+    background-color: #FF5722;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    background-color: #D84315;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para enlaces */
+a {
+    text-decoration: none;
+    color: #FF5722;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #D84315;
+}
